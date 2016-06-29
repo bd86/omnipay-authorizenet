@@ -18,7 +18,8 @@ class AIMAuthorizeRequestTest extends TestCase
                 'amount' => '12.00',
                 'customerId' => 'cust-id',
                 'card' => $this->getValidCard(),
-                'duplicateWindow' => 0
+                'duplicateWindow' => 0,
+                'description' => 'Product Description'
             )
         );
     }
@@ -39,6 +40,7 @@ class AIMAuthorizeRequestTest extends TestCase
         $keys = array(
             "transactionType",
             "amount",
+            "description",
             "payment",
             "customer",
             "billTo",
